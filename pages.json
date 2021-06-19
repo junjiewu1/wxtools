@@ -1,0 +1,132 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+		    "path" : "pages/index/index",
+		    "style" : {"enablePullDownRefresh": true}                                                                                  
+		},
+		{"path" : "pages/createPromotion/createPromotion"},
+		{
+		    "path" : "pages/ownedGoodsList/ownedGoodsList",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "商品库",
+		        "enablePullDownRefresh": true
+		    }
+		    
+		},{
+		    "path" : "pages/addGoods/addGoods",
+			"style" :{"navigationBarTitleText": "添加商品"}
+		},
+		{
+		    "path" : "pages/store/store",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "小店",
+		        "enablePullDownRefresh": false
+		    }
+		    
+		},
+		{
+		    "path" : "pages/secKill/secKill",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "秒杀",
+		        "enablePullDownRefresh": true
+		    }
+		},	
+		
+		{"path": "pages/resources/resources"},
+		{"path" : "pages/allbooks/allbooks" },
+		{"path" : "pages/clockIn/clockIn"},
+		{
+			 "path" : "pages/completes/completes",
+			"style": {"enablePullDownRefresh": true}   
+		},
+		{"path" : "pages/projectsManage/projectsManage"},
+		{"path" : "pages/projects/projects"},
+		{
+		    "path" : "pages/memberList/memberList",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "成员",
+		        "enablePullDownRefresh": false
+		    }  
+		},	
+		{
+			"path": "pages/topics/topics",
+			"style": {"enablePullDownRefresh": true}
+		},
+		{"path" : "pages/manage/manage"},
+		{"path": "pages/login/login"},
+        { 
+			"path" : "pages/projectsCompletes/projectsCompletes",
+			"style": {"enablePullDownRefresh": true }    
+		},
+        {"path" : "pages/completedUserinfo/completedUserinfo"},
+        {"path" : "pages/impQuestionnaire/impQuestionnaire"},
+		{ "path" : "pages/postCreate/postCreate"},
+        {"path" : "pages/postDetail/postDetail"},
+        {"path" : "pages/moreTasks/moreTasks"},
+        {"path" : "pages/downLoad/downLoad"},
+        {"path" : "pages/fields/fields"},
+        {"path" : "pages/notices/notices"},
+        { "path" : "pages/noticesCompletes/noticesCompletes"},
+        { "path" : "pages/outputImg/outputImg"},
+		{
+            "path" : "pages/postList/postList",
+            "style": {"enablePullDownRefresh": true}
+        },
+		{ 
+		  "path" : "pages/setTopic/setTopic",
+		  "style" :{"navigationBarTitleText": "修改信息"} 
+		},
+        {
+            "path" : "pages/gallery/gallery",
+            "style": { "navigationBarTitleText": "群相册"}                                                                                 
+        }
+        ,{
+            "path" : "pages/galleryDetail/galleryDetail",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        
+        
+        ,{
+            "path" : "pages/goods/goods",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/cart/cart",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
+	"globalStyle": {  
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "云中助手",
+		"navigationBarBackgroundColor": "#FFFFFF"
+	},
+	"condition" : { //模式配置，仅开发期间生效
+		"current": 0, //当前激活的模式(list 的索引项)
+		"list": [
+			{
+				"name": "", //模式名称
+				"path": "", //启动页面，必选
+				"query": "" //启动参数，在页面的onLoad函数里面得到
+			}
+		]
+	}
+}
